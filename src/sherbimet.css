@@ -1,0 +1,279 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= TITLE ================= */
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 35px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+}
+
+.page-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 50px;
+  background: #f26522;
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.services-table {
+  width: 98%;
+  max-width: 1400px;
+
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* HEADER */
+
+.services-table thead th {
+  background: #f8f8f8;
+  padding: 10px 8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #ececec;
+}
+
+/* BODY */
+
+.services-table tbody td {
+  padding: 10px 8px;
+  text-align: center;
+  vertical-align:auto;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+.services-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.services-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* SERVICE NAME */
+
+.service-name {
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* CODE */
+
+.code {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* DOCS */
+
+.docs {
+  display: inline-block;
+  text-align: left;
+}
+
+.docs summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.docs summary::-webkit-details-marker {
+  display: none;
+}
+
+.docs ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.docs li {
+  margin-bottom: 4px;
+}
+
+/* CENTERED CELLS */
+
+.cell-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* BADGES */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  min-width: 70px;
+  padding: 6px 14px;
+
+  border-radius: 30px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge.yes {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge.no {
+  background: #fdecea;
+  color: #c62828;
+}
+
+/* BUTTON */
+
+.btn {
+  background: #f26522;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  padding: 5px 9px;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #e55a17;
+}
+
+.btn-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-apply img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+.docs summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.docs .arrow {
+  transition: transform 0.2s ease;
+  margin-left: auto;
+}
+
+/* kur është hapur details */
+.docs[open] .arrow {
+  transform: rotate(180deg);
+}
+
+
+/* ================= MOBILE CARD TABLE ================= */
+
+@media (max-width: 768px) {
+
+ .mobile-cards {
+  padding: 0 12px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.card-header h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 13px;
+}
+
+.card-row:last-of-type {
+  border-bottom: none;
+}
+
+.card-row span {
+  color: #666;
+}
+
+.service-card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+}
