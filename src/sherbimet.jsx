@@ -41,6 +41,18 @@ export default function Sherbimet() {
   }, []);
 
 
+function countDocuments(text) {
+  if (!text || typeof text !== "string") {
+    return 0;
+  }
+
+  return text
+    .split(/\s*\d+\./)
+    .filter(doc => doc.trim().length > 0)
+    .length;
+}
+
+
 
   // Ndaj dokumentet nga teksti i Excel
   const getDokumente = (text) => {
@@ -103,12 +115,13 @@ export default function Sherbimet() {
 
                 <th>Kodi</th>
 
-                <th>Dokumentacioni</th>
-
                 <th>Afati</th>
+
                 <th>Kamatëvonesë</th>
 
                 <th>Fast</th>
+                
+                <th>Dokumentacioni</th>
 
                 <th>Apliko</th>
 
@@ -163,58 +176,6 @@ export default function Sherbimet() {
                   </span>
 
                 </td>
-
-
-
-
-
-                <td>
-
-
-                  <details className="docs">
-
-
-                    <summary>
-
-                      📄 Dokumente
-
-                      <span className="arrow">
-                        ▼
-                      </span>
-
-
-                    </summary>
-
-
-
-                    <ul>
-
-
-                    {
-
-                      getDokumente(
-                        item["Dokumentacioni i nevojshëm"]
-                      )
-                      .map((doc,i)=>(
-
-                        <li key={i}>
-                          {doc}
-                        </li>
-
-
-                      ))
-
-                    }
-
-
-                    </ul>
-
-
-                  </details>
-
-
-                </td>
-
 
 
 
@@ -311,7 +272,50 @@ export default function Sherbimet() {
 
                 </td>
 
+              
+                              <td>
 
+
+                  <details className="docs">
+
+
+                  <summary>
+                  ({countDocuments(item["Dokumentacioni i nevojshëm"])}) Dokumente 
+
+                    <span className="arrow">
+                      ▼
+                    </span>
+                  </summary>
+
+
+
+                    <ul>
+
+
+                    {
+
+                      getDokumente(
+                        item["Dokumentacioni i nevojshëm"]
+                      )
+                      .map((doc,i)=>(
+
+                        <li key={i}>
+                          {doc}
+                        </li>
+
+
+                      ))
+
+                    }
+
+
+                    </ul>
+
+
+                  </details>
+
+
+                </td>
 
 
 
