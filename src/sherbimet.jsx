@@ -1,107 +1,71 @@
 import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaClock, FaTimesCircle } from "react-icons/fa";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
+import  icon from  "../images/icon.png";
 import "./sherbimet.css";
 import sherbimetData from "../sherbime.json";
 
-
 export default function Sherbimet() {
-
   const [isMobile, setIsMobile] = useState(false);
   const [sherbimet, setSherbimet] = useState([]);
 
-
   useEffect(() => {
-
-    // Merr të dhënat nga JSON
     setSherbimet(sherbimetData);
-
 
     const checkSize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-
     checkSize();
 
-    window.addEventListener(
-      "resize",
-      checkSize
-    );
-
+    window.addEventListener("resize", checkSize);
 
     return () => {
-      window.removeEventListener(
-        "resize",
-        checkSize
-      );
+      window.removeEventListener("resize", checkSize);
     };
-
-
   }, []);
 
+  function countDocuments(text) {
+    if (!text || typeof text !== "string") {
+      return 0;
+    }
 
-function countDocuments(text) {
-  if (!text || typeof text !== "string") {
-    return 0;
+    return text
+      .split(/\s*\d+\./)
+      .filter((doc) => doc.trim().length > 0).length;
   }
 
-  return text
-    .split(/\s*\d+\./)
-    .filter(doc => doc.trim().length > 0)
-    .length;
-}
-
-
-
-  // Ndaj dokumentet nga teksti i Excel
   const getDokumente = (text) => {
-
     if (!text) return [];
 
     return text
       .split(/\d+\./)
-      .map(item => item.trim())
-      .filter(item => item.length > 0);
-
+      .map((item) => item.trim())
+      .filter((item) => item.length > 0);
   };
 
-
-
-  // Kontrollo FAST nga Excel
   const isFast = (value) => {
-
     if (!value) return false;
 
-    return value.toString()
-      .trim()
-      .toUpperCase() === "PO";
-
+    return value.toString().trim().toUpperCase() === "PO";
   };
 
-
-
   return (
-
     <div className="page">
-
 
       <h2 className="page-title">
         SHËRBIMET
       </h2>
 
 
-
-
       {/* ================= DESKTOP ================= */}
 
       {!isMobile && (
-
         <div className="table-wrapper">
 
-
           <table className="services-table">
-
 
             <thead>
 
@@ -115,94 +79,125 @@ function countDocuments(text) {
 
                 <th>Kodi</th>
 
-                <th>Afati</th>
 
-                <th>Kamatëvonesë</th>
+                <th>
+                  Afati
+                </th>
 
-                <th>Fast</th>
+
+                <th>
+                  Kamatëvonesë
                 
-                <th>Dokumentacioni</th>
+                 <span className="info-wrapper">
+                  <InfoOutlinedIcon
+                    className="info-icon"                 
+                  />
 
-                <th>Apliko</th>
+                     <span className="info-tooltip">
+                        Kamatëvonesa aplikohet 10% e tarifës për çdo ditë vonesë,
+                        por jo më shumë se 300 000 lekë.
+                      </span>
+                      </span>
+
+
+                </th>
+
+
+                <th>
+                  Fast
+                      
+                 <span className="info-wrapper">
+
+                  <InfoOutlinedIcon
+                    className="info-icon"
+                   
+                  />
+
+                    <span className="info-tooltip">
+                       Shërbim me procedurë të përshpejtuar brenda 24 orëve.
+                      </span>
+                      </span>
+
+                </th>
+
+
+                <th>
+                  Dokumentacioni
+                </th>
+
+
+                <th>
+                  Apliko
+
+                   <span className="info-wrapper">
+                      
+                       <InfoOutlinedIcon
+                    className="info-icon"
+                    
+                  />
+
+                     <span className="info-tooltip">
+                      Aplikoni nëpërmjet e-Albania
+                      </span>
+                      </span>
+
+                </th>
 
 
               </tr>
 
-
             </thead>
-
-
 
 
             <tbody>
 
+              {sherbimet.map((item,index)=>(
 
-            {sherbimet.map((item,index)=>(
-
-
-              <tr key={index}>
+                <tr key={index}>
 
 
-                <td>
-                  {item["Nr."]}
-                </td>
+                  <td>
+                    {item["Nr."]}
+                  </td>
 
 
-
-                <td className="service-name">
-
-                  {item["Emri i Shërbimit"]}
-
-                </td>
+                  <td className="service-name">
+                    {item["Emri i Shërbimit"]}
+                  </td>
 
 
+                  <td>
+                    {item["Tarifa"]}
+                  </td>
 
 
-                <td>
-
-                  {item["Tarifa"]}
-
-                </td>
+                  <td>
+                    <span className="code">
+                      {item["Kodi"]}
+                    </span>
+                  </td>
 
 
 
+                  <td>
 
-                <td>
+                    <span className="cell-center">
 
-                  <span className="code">
+                      <FaCalendarAlt />
 
-                    {item["Kodi"]}
+                      {item["Afati"]}
 
-                  </span>
+                    </span>
 
-                </td>
-
-
-
-
-                <td>
+                  </td>
 
 
-                  <span className="cell-center">
 
+                  <td>
 
-                    <FaCalendarAlt/>
-
-
-                    {item["Afati"]}
-
-
-                  </span>
-
-
-                </td>
-
-
-                      <td>
-
-                      {
+                    {
                       item[
-                      "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)"
+                        "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)"
                       ]
                       ?.toUpperCase() === "PO"
 
@@ -217,144 +212,124 @@ function countDocuments(text) {
                       <span className="badge no">
                         JO
                       </span>
-
-                      }
-
-                      </td>
-
-
-
-                <td>
-
-
-                {
-
-                isFast(
-                  item[
-                    "FAST (Shërbime me procedurë të përshpejtuar - 24H)"
-                  ]
-                )
-
-
-                ?
-
-                (
-
-                  <span className="badge yes">
-
-                    <FaClock/>
-                    24H
-
-                  </span>
-
-
-                )
-
-
-                :
-
-
-                (
-
-                  <span className="badge no">
-
-                    <FaTimesCircle/>
-                    JO
-
-                  </span>
-
-
-                )
-
-
-                }
-
-
-                </td>
-
-              
-                              <td>
-
-
-                  <details className="docs">
-
-
-                  <summary>
-                  ({countDocuments(item["Dokumentacioni i nevojshëm"])}) Dokumente 
-
-                    <span className="arrow">
-                      ▼
-                    </span>
-                  </summary>
-
-
-
-                    <ul>
-
-
-                    {
-
-                      getDokumente(
-                        item["Dokumentacioni i nevojshëm"]
-                      )
-                      .map((doc,i)=>(
-
-                        <li key={i}>
-                          {doc}
-                        </li>
-
-
-                      ))
-
                     }
 
-
-                    </ul>
-
-
-                  </details>
-
-
-                </td>
+                  </td>
 
 
 
+                  <td>
+
+                    {
+                      isFast(
+                        item[
+                          "FAST (Shërbime me procedurë të përshpejtuar - 24H)"
+                        ]
+                      )
+
+                      ?
+
+                      <span className="badge yes">
+
+                        <FaClock />
+
+                        24h
+
+                      </span>
+
+                      :
+
+                      <span className="badge no">
+
+                        <FaTimesCircle />
+
+                        24h
+
+                      </span>
+                    }
+
+                  </td>
 
 
-                <td>
+
+                  <td>
+
+                    <details className="docs">
+
+                      <summary>
+
+                        {countDocuments(
+                          item["Dokumentacioni i nevojshëm"]
+                        )}
+
+                        {" "}dokumente
 
 
-                  <a
+                            <ExpandCircleDownOutlinedIcon
+                                sx={{
+                                  color: "#3b3b3b",
+                                  fontSize: "25px",
+                                  marginLeft: "12px",
+                                   transition: "transform 0.3s ease"
+                                }}
+                              />
 
-                    href={item["Apliko"]}
-
-                    target="_blank"
-
-                    rel="noreferrer"
-
-                    className="btn btn-apply"
-
-                  >
-
-
-                    APLIKO
-
-                    <ChevronRightIcon fontSize="small"/>
+                      </summary>
 
 
-                  </a>
+                      <ul>
+
+                        {
+                          getDokumente(
+                            item["Dokumentacioni i nevojshëm"]
+                          ).map((doc,i)=>(
+
+                            <li key={i}>
+                              {doc}
+                            </li>
+
+                          ))
+                        }
+
+                      </ul>
 
 
-                </td>
+                    </details>
+
+
+                  </td>
 
 
 
-              </tr>
+                  <td>
+
+                    <a
+
+                      href={item["Apliko"]}
+
+                      target="_blank"
+
+                      rel="noreferrer"
+
+                      className="btn btn-apply"
+
+                    >
+                     
+                       <img src={icon} alt="" className="ealbania-icon" />
+                      Apliko
+
+                      <ChevronRightIcon fontSize="small"/>
+
+                    </a>
+
+                  </td>
 
 
 
-            ))}
+                </tr>
 
+
+              ))}
 
 
             </tbody>
@@ -363,265 +338,208 @@ function countDocuments(text) {
           </table>
 
 
-
         </div>
-
-
       )}
-
-
-
 
 
 
       {/* ================= MOBILE ================= */}
 
 
-
       {isMobile && (
-
 
         <div className="mobile-cards">
 
 
+          {sherbimet.map((item,index)=>(
 
-        {
 
-        sherbimet.map((item,index)=>(
+            <div
+              className="service-card"
+              key={index}
+            >
 
 
-          <div
+              <div className="card-header">
 
-            className="service-card"
 
-            key={index}
+                <h3>
+                  {item["Emri i Shërbimit"]}
+                </h3>
 
-          >
 
-
-
-
-            <div className="card-header">
-
-
-              <h3>
-
-                {item["Emri i Shërbimit"]}
-
-              </h3>
-
-
-
-              <span className="code">
-
-                {item["Kodi"]}
-
-              </span>
-
-
-            </div>
-
-
-
-
-
-
-
-            <div className="card-row">
-
-
-              <span>
-                Tarifa
-              </span>
-
-
-              <b>
-
-                {item["Tarifa"]}
-
-              </b>
-
-
-
-            </div>
-
-
-
-
-
-
-            <div className="card-row">
-
-
-              <span>
-                Afati
-              </span>
-
-
-              <b>
-
-                <FaCalendarAlt/>
-
-                {item["Afati"]}
-
-
-              </b>
-
-
-            </div>
-
-
-
-
-
-
-            <div className="card-row">
-
-
-              <span>
-                Fast
-              </span>
-
-
-
-              {
-
-              isFast(
-
-                item[
-                "FAST (Shërbime me procedurë të përshpejtuar - 24H)"
-                ]
-
-              )
-
-              ?
-
-              <span className="badge yes">
-
-                <FaClock/>
-                24H
-
-              </span>
-
-
-              :
-
-              <span className="badge no">
-
-                <FaTimesCircle/>
-                JO
-
-              </span>
-
-
-              }
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <details className="docs">
-
-
-              <summary>
-
-                📄 Dokumentet
-
-                <span className="arrow">
-                  ▼
+                <span className="code">
+                  {item["Kodi"]}
                 </span>
 
 
-              </summary>
+              </div>
+
+
+
+              <div className="card-row">
+
+                <span>
+                  Tarifa
+                </span>
+
+
+                <b>
+                  {item["Tarifa"]}
+                </b>
+
+
+              </div>
+
+
+
+              <div className="card-row">
+
+
+                <span>
+                  Afati
+                </span>
+
+
+                <b>
+
+                  <FaCalendarAlt />
+
+                  &nbsp;
+
+                  {item["Afati"]}
+
+
+                </b>
+
+
+              </div>
+
+
+
+              <div className="card-row">
+
+
+                <span>
+                  Fast
+                </span>
+
+
+                {
+                  isFast(
+                    item[
+                      "FAST (Shërbime me procedurë të përshpejtuar - 24H)"
+                    ]
+                  )
+
+                  ?
+
+                  <span className="badge yes">
+
+                    <FaClock/>
+
+                    24h
+
+                  </span>
+
+
+                  :
+
+                  <span className="badge no">
+
+                    <FaTimesCircle/>
+
+                    24h
+
+                  </span>
+                }
+
+
+              </div>
+
+
+
+              <details className="docs">
+
+
+                <summary>
+
+
+                  {countDocuments(
+                    item["Dokumentacioni i nevojshëm"]
+                  )}
+
+                  {" "}dokumente &nbps;
+
+                    <ExpandCircleDownOutlinedIcon
+                      sx={{
+                        color: "#3b3b3b",
+                        fontSize: "14px",
+                        marginLeft: "8px"
+                      }}
+                    />
+
+
+                </summary>
+
+
+
+                <ul>
+
+                  {
+                    getDokumente(
+                      item["Dokumentacioni i nevojshëm"]
+                    )
+                    .map((doc,i)=>(
+
+                      <li key={i}>
+                        {doc}
+                      </li>
+
+                    ))
+                  }
+
+
+                </ul>
+
+
+              </details>
 
 
 
 
-              <ul>
+              <a
+
+                href={item["Apliko"]}
+
+                target="_blank"
+
+                rel="noreferrer"
+
+                className="btn btn-apply"
+
+              >
+
+                Apliko
+
+                <ChevronRightIcon fontSize="small"/>
 
 
-              {
-
-              getDokumente(
-                item["Dokumentacioni i nevojshëm"]
-              )
-              .map((doc,i)=>(
-
-
-                <li key={i}>
-                  {doc}
-                </li>
-
-
-              ))
-
-              }
-
-
-              </ul>
+              </a>
 
 
 
-            </details>
+            </div>
 
 
-
-
-
-
-
-            <a
-
-              href={item["Apliko"]}
-
-              target="_blank"
-
-              rel="noreferrer"
-
-              className="btn btn-apply"
-
-            >
-
-              APLIKO
-
-
-           <ChevronRightIcon fontSize="small"/>
-
-
-            </a>
-
-
-
-
-          </div>
-
-
-
-        ))
-
-
-        }
-
+          ))}
 
 
         </div>
 
-
-
       )}
 
 
-
-
     </div>
-
   );
-
-
 }
