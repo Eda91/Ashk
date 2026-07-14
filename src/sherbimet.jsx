@@ -369,6 +369,7 @@ export default function Sherbimet() {
 
 
                 <span className="code">
+                   <span>KODI:  </span>
                   {item["Kodi"]}
                 </span>
 
@@ -469,12 +470,12 @@ export default function Sherbimet() {
                     item["Dokumentacioni i nevojshëm"]
                   )}
 
-                  {" "}dokumente &nbps;
+                  {" "}dokumente 
 
                     <ExpandCircleDownOutlinedIcon
                       sx={{
                         color: "#3b3b3b",
-                        fontSize: "14px",
+                        fontSize: "26px",
                         marginLeft: "8px"
                       }}
                     />
@@ -519,7 +520,7 @@ export default function Sherbimet() {
                 className="btn btn-apply"
 
               >
-
+               <img src={icon} alt="" className="ealbania-icon" />
                 Apliko
 
                 <ChevronRightIcon fontSize="small"/>

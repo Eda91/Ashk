@@ -702,134 +702,61 @@ img{
 
 @media(max-width:768px){
 
+    .table-wrapper {
+        display:none;
+    }
 
-.table-wrapper {
+    .mobile-cards {
 
+        padding:0 15px 40px;
 
-    display:none;
+        display:flex;
 
-}
+        flex-direction:column;
 
+        gap:15px;
+    }
 
 
-.mobile-cards {
+    .service-card {
 
+        background:white;
 
-    padding:0 15px 40px;
+        border-radius:16px;
 
+        padding:18px;
 
-    display:flex;
+        box-shadow:
+        0 8px 20px rgba(0,0,0,.06);
+    }
 
 
-    flex-direction:column;
+    .service-card .btn {
 
+        width:90%;
+        max-width:320px;
 
-    gap:15px;
+        height:48px;
 
+        margin:18px auto 0;
 
-}
+        display:flex;
 
+        justify-content:center;
 
+        align-items:center;
 
-.service-card {
+        font-size:15px;
 
+        border-radius:12px;
+    }
 
-    background:white;
 
+    .ealbania-icon {
 
-    border-radius:16px;
+        width:28px;
 
-
-    padding:18px;
-
-
-    box-shadow:
-
-    0 8px 20px rgba(0,0,0,.06);
-
-
-}
-
-
-
-.card-header {
-
-
-    display:flex;
-
-
-    justify-content:space-between;
-
-
-}
-
-
-
-.card-header h3 {
-
-
-    margin:0;
-
-
-    font-size:15px;
-
-
-}
-
-
-
-.card-row {
-
-
-    display:flex;
-
-
-    justify-content:space-between;
-
-
-    padding:10px 0;
-
-
-    border-bottom:1px solid #eee;
-
-    font-size:13px;
-   
-
-
-}
-
-
-.card-row b{
-    display:flex;
-    align-items:center;
-    gap:6px;
-}
-
-
-.card-row span {
-
-
-    color:#6b7280;
-    gap:3px;
-
-
-}
-
-.card-row b svg{
-    margin-right:6px;
-}
-
-.service-card .btn {
-
-
-    width:100%;
-
-
-    margin-top:12px;
-
-
-}
-
-
+        height:28px;
+    }
 
 }
