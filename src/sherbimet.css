@@ -143,7 +143,7 @@ img{
 
 .services-table th:nth-child(9),
 .services-table td:nth-child(9){
-    width:6%;
+    width:8%;
 }
 
 /* ================= HEADER ================= */
@@ -479,7 +479,7 @@ img{
 
     width:100%;
 
-    max-width:160px;
+    max-width:100px;
 
     height:34px;
 
@@ -574,7 +574,7 @@ img{
 
     .btn{
 
-        max-width:130px;
+        max-width:68px;
 
         height:38px;
 
@@ -628,72 +628,76 @@ img{
 
 
 
-/* ================= LAPTOP ================= */
-
-
-@media(max-width:1400px){
-
-
-.table-wrapper {
-
-
-    padding:0 15px 40px;
-
-}
-
-
-
-.services-table th,
-.services-table td {
-
-
-    font-size:12px;
-
-
-    padding:14px 8px;
-
-
-}
-
-
-
-.docs summary {
-
-
-    font-size:12px;
-
-}
-
-
-}
-
-
 
 /* ================= TABLET ================= */
 
 
-@media(max-width:1024px){
+/* ================= SMALL DESKTOP ================= */
+
+@media (max-width: 1440px) {
+
+  .table-wrapper {
+    padding: 0 15px 40px;
+  }
+
+  .services-table {
+    max-width: 100%;
+  }
+
+  .services-table th,
+  .services-table td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .services-table thead th {
+    font-size: 14px;
+  }
+
+  .service-name {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .code {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .badge {
+    min-width: 60px;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .btn {
+    max-width: 100px;
+    width: 71px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  .docs summary {
+    font-size: 12px;
+  }
+
+  .docs li {
+    font-size: 11px;
+  }
 
 
-.table-wrapper {
+    .ealbania-icon {
 
+        width:18px;
 
-    overflow-x:auto;
+        height:18px;
+    }
 
 }
 
 
 
-.services-table {
-
-
-    min-width:1100px;
-
-}
-
-
-
-}
 
 
 
