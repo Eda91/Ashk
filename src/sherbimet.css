@@ -481,7 +481,7 @@ img{
 
     max-width:160px;
 
-    height:40px;
+    height:34px;
 
     padding:0 18px;
 
@@ -546,13 +546,13 @@ img{
 }
 
 .ealbania-icon {
-  width: 25px;
-  height: 25px;
+  width: 19px;
+  height: 19px;
   object-fit: contain;
   flex-shrink: 0;
   margin-left: 4px ;
-  font-size:18px;
-  font-weight:800;
+  font-size:15px;
+
 }
 
 .btn-apply:hover{
@@ -715,7 +715,20 @@ img{
         flex-direction:column;
 
         gap:15px;
+
+         font-weight:400;
     }
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end:1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 
 
     .service-card {
@@ -734,9 +747,9 @@ img{
     .service-card .btn {
 
         width:90%;
-        max-width:320px;
+        max-width:100px;
 
-        height:48px;
+        height:36px;
 
         margin:18px auto 0;
 
@@ -754,9 +767,46 @@ img{
 
     .ealbania-icon {
 
-        width:28px;
+        width:19px;
 
-        height:28px;
+        height:19px;
     }
 
+
+    .documentation-details {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.documentation-details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.documentation-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.documentation-details .card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.documentation-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.documentation-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
 }

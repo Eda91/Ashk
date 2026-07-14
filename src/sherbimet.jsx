@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaCalendarAlt, FaClock, FaTimesCircle } from "react-icons/fa";
+import { FaCalendarAlt, FaClock, FaTimesCircle,FaCheckCircle } from "react-icons/fa";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
@@ -183,7 +183,7 @@ export default function Sherbimet() {
 
                     <span className="cell-center">
 
-                      <FaCalendarAlt />
+                      
 
                       {item["Afati"]}
 
@@ -204,12 +204,14 @@ export default function Sherbimet() {
                       ?
 
                       <span className="badge yes">
-                        PO
+                         <FaCheckCircle />
+                      PO
                       </span>
 
                       :
 
                       <span className="badge no">
+                         <FaTimesCircle />
                         JO
                       </span>
                     }
@@ -315,10 +317,10 @@ export default function Sherbimet() {
 
                     >
                      
-                       <img src={icon} alt="" className="ealbania-icon" />
+                    
                       Apliko
 
-                      <ChevronRightIcon fontSize="small"/>
+                        <img src={icon} alt="" className="ealbania-icon" />
 
                     </a>
 
@@ -359,6 +361,14 @@ export default function Sherbimet() {
               key={index}
             >
 
+              <div className="card-header">
+                <span className="code">
+                   <span>KODI:  </span>
+                  {item["Kodi"]}
+                </span>
+
+
+              </div>
 
               <div className="card-header">
 
@@ -366,12 +376,6 @@ export default function Sherbimet() {
                 <h3>
                   {item["Emri i Shërbimit"]}
                 </h3>
-
-
-                <span className="code">
-                   <span>KODI:  </span>
-                  {item["Kodi"]}
-                </span>
 
 
               </div>
@@ -404,7 +408,6 @@ export default function Sherbimet() {
 
                 <b>
 
-                  <FaCalendarAlt />
 
                   &nbsp;
 
@@ -416,7 +419,23 @@ export default function Sherbimet() {
 
               </div>
 
+              <div className="card-row">
+                <span>Kamatëvonesë</span>
 
+                {item[
+                  "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)"
+                ]?.toUpperCase() === "PO" ? (
+                  <span className="badge yes">
+                    <FaCheckCircle />
+                    &nbsp;PO
+                  </span>
+                ) : (
+                  <span className="badge no">
+                    <FaTimesCircle />
+                    &nbsp;JO
+                  </span>
+                )}
+              </div>
 
               <div className="card-row">
 
@@ -459,52 +478,31 @@ export default function Sherbimet() {
               </div>
 
 
+            <details className="documentation-details">
+              <summary className="card-row">
+                <span>Dokumentacioni</span>
 
-              <details className="docs">
+                <div className="summary-right">
+                  <b>
+                    {countDocuments(item["Dokumentacioni i nevojshëm"])} dokumente
+                  </b>
 
+                  <ExpandCircleDownOutlinedIcon
+                    sx={{
+                      color: "#3b3b3b",
+                      fontSize: "22px",
+                      marginLeft: "6px",
+                    }}
+                  />
+                </div>
+              </summary>
 
-                <summary>
-
-
-                  {countDocuments(
-                    item["Dokumentacioni i nevojshëm"]
-                  )}
-
-                  {" "}dokumente 
-
-                    <ExpandCircleDownOutlinedIcon
-                      sx={{
-                        color: "#3b3b3b",
-                        fontSize: "26px",
-                        marginLeft: "8px"
-                      }}
-                    />
-
-
-                </summary>
-
-
-
-                <ul>
-
-                  {
-                    getDokumente(
-                      item["Dokumentacioni i nevojshëm"]
-                    )
-                    .map((doc,i)=>(
-
-                      <li key={i}>
-                        {doc}
-                      </li>
-
-                    ))
-                  }
-
-
-                </ul>
-
-
-              </details>
+              <ul className="documentation-list">
+                {getDokumente(item["Dokumentacioni i nevojshëm"]).map((doc, i) => (
+                  <li key={i}>{doc}</li>
+                ))}
+              </ul>
+            </details>
 
 
 
@@ -520,10 +518,10 @@ export default function Sherbimet() {
                 className="btn btn-apply"
 
               >
-               <img src={icon} alt="" className="ealbania-icon" />
+             
                 Apliko
 
-                <ChevronRightIcon fontSize="small"/>
+                  <img src={icon} alt="" className="ealbania-icon" />
 
 
               </a>
