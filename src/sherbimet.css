@@ -57,14 +57,7 @@ img{
     color:#111827;
 }
 
-.page-title::after{
-    content:"";
-    width:80px;
-    height:5px;
-    margin-top:14px;
-    border-radius:999px;
-    background:#f26522;
-}
+
 
 /* ================= TABLE WRAPPER ================= */
 
@@ -813,4 +806,23 @@ h3 {
   font-size: 14px;
   color: #555;
 }
+
+
+.info-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.info-icon {
+  width: 17px !important;
+  height: 17px !important;
+  margin-left: 3px;
+  cursor: pointer;
+  color: #1a9ae8;
+  transform: translateY(4px);
+}
+
+
 }

@@ -55,9 +55,7 @@ export default function Sherbimet() {
   return (
     <div className="page">
 
-      <h2 className="page-title">
-        SHËRBIMET
-      </h2>
+    
 
 
       {/* ================= DESKTOP ================= */}
@@ -233,7 +231,7 @@ export default function Sherbimet() {
 
                       <span className="badge yes">
 
-                        <FaClock />
+                         <FaCheckCircle />
 
                         24h
 
@@ -348,196 +346,251 @@ export default function Sherbimet() {
       {/* ================= MOBILE ================= */}
 
 
-      {isMobile && (
+   {isMobile && (
 
-        <div className="mobile-cards">
+  <div className="mobile-container">
 
-
-          {sherbimet.map((item,index)=>(
-
-
-            <div
-              className="service-card"
-              key={index}
-            >
-
-              <div className="card-header">
-                <span className="code">
-                   <span>KODI:  </span>
-                  {item["Kodi"]}
-                </span>
+    <h2 className="page-title">
+      SHËRBIMET
+    </h2>
 
 
-              </div>
-
-              <div className="card-header">
+    <div className="mobile-cards">
 
 
-                <h3>
-                  {item["Emri i Shërbimit"]}
-                </h3>
+      {sherbimet.map((item,index)=>(
 
 
-              </div>
+        <div
+          className="service-card"
+          key={index}
+        >
+
+          <div className="card-header">
+
+            <span className="code">
+              <span>KODI: </span>
+              {item["Kodi"]}
+            </span>
+
+          </div>
+
+
+          <div className="card-header">
+
+            <h3>
+              {item["Emri i Shërbimit"]}
+            </h3>
+
+          </div>
+
+
+          <div className="card-row">
+
+            <span>Tarifa</span>
+
+            <b>
+              {item["Tarifa"]}
+            </b>
+
+          </div>
 
 
 
-              <div className="card-row">
+          <div className="card-row">
 
-                <span>
-                  Tarifa
-                </span>
+            <span>Afati</span>
 
+            <b>
+              {item["Afati"]}
+            </b>
 
-                <b>
-                  {item["Tarifa"]}
-                </b>
-
-
-              </div>
+          </div>
 
 
 
-              <div className="card-row">
+          <div className="card-row">
 
+            <span>Kamatëvonesë  
 
-                <span>
-                  Afati
-                </span>
-
-
-                <b>
-
-
-                  &nbsp;
-
-                  {item["Afati"]}
-
-
-                </b>
-
-
-              </div>
-
-              <div className="card-row">
-                <span>Kamatëvonesë</span>
-
-                {item[
-                  "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)"
-                ]?.toUpperCase() === "PO" ? (
-                  <span className="badge yes">
-                    <FaCheckCircle />
-                    &nbsp;PO
-                  </span>
-                ) : (
-                  <span className="badge no">
-                    <FaTimesCircle />
-                    &nbsp;JO
-                  </span>
-                )}
-              </div>
-
-              <div className="card-row">
-
-
-                <span>
-                  Fast
-                </span>
-
-
-                {
-                  isFast(
-                    item[
-                      "FAST (Shërbime me procedurë të përshpejtuar - 24H)"
-                    ]
-                  )
-
-                  ?
-
-                  <span className="badge yes">
-
-                    <FaClock/>
-
-                    24h
-
-                  </span>
-
-
-                  :
-
-                  <span className="badge no">
-
-                    <FaTimesCircle/>
-
-                    24h
-
-                  </span>
-                }
-
-
-              </div>
-
-
-            <details className="documentation-details">
-              <summary className="card-row">
-                <span>Dokumentacioni</span>
-
-                <div className="summary-right">
-                  <b>
-                    {countDocuments(item["Dokumentacioni i nevojshëm"])} dokumente
-                  </b>
-
-                  <ExpandCircleDownOutlinedIcon
-                    sx={{
-                      color: "#3b3b3b",
-                      fontSize: "22px",
-                      marginLeft: "6px",
-                    }}
+                     <span className="info-wrapper">
+                  <InfoOutlinedIcon
+                    className="info-icon"                 
                   />
-                </div>
-              </summary>
 
-              <ul className="documentation-list">
-                {getDokumente(item["Dokumentacioni i nevojshëm"]).map((doc, i) => (
-                  <li key={i}>{doc}</li>
-                ))}
-              </ul>
-            </details>
+                     <span className="info-tooltip">
+                        Kamatëvonesa aplikohet 10% e tarifës për çdo ditë vonesë,
+                        por jo më shumë se 300 000 lekë.
+                      </span>
+                      </span>
 
+            </span>
 
+            {
+              item[
+                "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)"
+              ]?.toUpperCase() === "PO"
 
+              ?
 
-              <a
+              <span className="badge yes">
+                <FaCheckCircle />
+                &nbsp;PO
+              </span>
 
-                href={item["Apliko"]}
+              :
 
-                target="_blank"
+              <span className="badge no">
+                <FaTimesCircle />
+                &nbsp;JO
+              </span>
+            }
 
-                rel="noreferrer"
-
-                className="btn btn-apply"
-
-              >
-             
-                Apliko
-
-                  <img src={icon} alt="" className="ealbania-icon" />
-
-
-              </a>
-
+          </div>
 
 
-            </div>
+
+          <div className="card-row">
+
+            <span>
+              Fast
+
+                  <span className="info-wrapper">
+
+                  <InfoOutlinedIcon
+                    className="info-icon"
+                   
+                  />
+
+                    <span className="info-tooltip">
+                       Shërbim me procedurë të përshpejtuar brenda 24 orëve.
+                      </span>
+                      </span>
+            </span>
 
 
-          ))}
+            {
+              isFast(
+                item[
+                  "FAST (Shërbime me procedurë të përshpejtuar - 24H)"
+                ]
+              )
+
+              ?
+
+              <span className="badge yes">
+
+                  <FaCheckCircle />
+
+                &nbsp;24h
+
+              </span>
+
+              :
+
+              <span className="badge no">
+
+                <FaTimesCircle />
+
+                &nbsp;24h
+
+              </span>
+            }
+
+          </div>
+
+
+
+
+          <details className="documentation-details">
+
+            <summary className="card-row">
+
+              <span>
+                Dokumentacioni
+              </span>
+
+
+              <div className="summary-right">
+
+                <b>
+                  {countDocuments(item["Dokumentacioni i nevojshëm"])} dokumente
+                </b>
+
+
+                <ExpandCircleDownOutlinedIcon
+                  sx={{
+                    color:"#3b3b3b",
+                    fontSize:"22px",
+                    marginLeft:"6px"
+                  }}
+                />
+
+              </div>
+
+
+            </summary>
+
+
+
+            <ul className="documentation-list">
+
+              {
+                getDokumente(
+                  item["Dokumentacioni i nevojshëm"]
+                )
+                .map((doc,i)=>(
+
+                  <li key={i}>
+                    {doc}
+                  </li>
+
+                ))
+              }
+
+            </ul>
+
+
+          </details>
+
+
+
+
+          <a
+
+            href={item["Apliko"]}
+
+            target="_blank"
+
+            rel="noreferrer"
+
+            className="btn btn-apply"
+
+          >
+
+            Apliko
+
+            <img 
+              src={icon} 
+              alt="" 
+              className="ealbania-icon" 
+            />
+
+          </a>
 
 
         </div>
 
-      )}
 
+      ))}
+
+
+    </div>
+
+
+  </div>
+
+)}
 
     </div>
   );
