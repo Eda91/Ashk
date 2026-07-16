@@ -3,6 +3,7 @@ import { FaCalendarAlt, FaClock, FaTimesCircle,FaCheckCircle } from "react-icons
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
+import SearchIcon from "@mui/icons-material/Search";
 import  icon from  "../images/icon.png";
 import "./sherbimet.css";
 import sherbimetData from "../sherbime.json";
@@ -10,6 +11,7 @@ import sherbimetData from "../sherbime.json";
 export default function Sherbimet() {
   const [isMobile, setIsMobile] = useState(false);
   const [sherbimet, setSherbimet] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     setSherbimet(sherbimetData);
@@ -52,10 +54,34 @@ export default function Sherbimet() {
     return value.toString().trim().toUpperCase() === "PO";
   };
 
+  const filteredSherbimet = sherbimet.filter((item) => {
+  const search = searchTerm.toLowerCase();
+
+  return (
+    item["Emri i Shërbimit"]?.toLowerCase().includes(search) 
+   
+  );
+});
+
   return (
     <div className="page">
+<div className="search-container">
 
-    
+  <div className="search-wrapper">
+
+    <input
+      type="text"
+      placeholder="Kërko shërbimin..."
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+      className="service-search"
+    />
+
+    <SearchIcon className="search-icon" />
+
+  </div>
+
+</div>
 
 
       {/* ================= DESKTOP ================= */}
@@ -149,7 +175,7 @@ export default function Sherbimet() {
 
             <tbody>
 
-              {sherbimet.map((item,index)=>(
+             {filteredSherbimet.map((item,index)=>(
 
                 <tr key={index}>
 
