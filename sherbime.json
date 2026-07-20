@@ -51,6 +51,7 @@
     "Afati": "8 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "10.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Kontratë shitje (e cila ka bashkëlidhur ceritifikatë, kartelë të përditësuar dhe hartë kadastrale);                                                                                                                                                              \n2. Certifikatë familjare/martesore të palës blerëse;                                                                           \n3. Në rastin e shitjes të pasurisë ndërtesë, vërtetim nga bashkia për shlyerjen e taksave sipas përcaktimeve të ligjit nr.9632/2006, i ndryshuar;                                                                                                                                                                                                                                              4. Mandat i cili i vërteton pagesën e tatimit/taksës të kalimit të të drejtës së pronësisë së pasurisë së paluajtshme kur gjen zbatim;                                                                                                                                                                                                                                                                                                                                                                   5.Kontrata e sigurimit 10 vjeçar në favor të blerësit në rastet e lidhjes së kontratës për kalimin e pronësisë së ndertesës midis ndërtuesit /zhvilluesit/investitorit dhe blerësit   për rastet e certifikatave të përdorimit të miratuara nga organet komptente pas hyrjes në fuqi të ligjit nr.107/2014 \"Për planifikimin dhe zhvillimin e territorit\", i ndryshuar ;                                                                                                                                                           \n6.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari)                                                                                                             7.Mandat i pagesës së tarifës së shërbimit.                                                                                                                                                               Në rastet e shitjes së tokës bujqësore:                                                                                                                                                       1.Kontratë shitje, e cila ka bashkëlidhur certifikatë, kartelë dhe hartë të përditësuar;                                                                                                                                                                                                                                               - Aktet që vërtetojnë përbërjen e familjes bujqësore në çastin e kalimit të pronësisë të vërtetuar nga certifikata e gjendjes civile, vërtetimi i pushtetit lokal dhe deklarata e përbashkët e antarëve të familjes;                                                                                                                                                                  -Prokurën noteriale të përfaqesimit nëse kalimi i pronësisë nuk kryhet nga të gjithë antarët e familjes bujqësore;                                                                                                                                              \n-Vërtetim i shlyerjes së taksave i lëshuar nga njësia e vetëqeverisjes vendore;                                                                                                                                                    -Vendim gjykate lëshim autorizimi në rast se në  familjen bujqësore është një anëtar i mitur, me objekt autorizimin e personit përkatës për të kryer në favor të të miturit kalimin e pronësisë/rrëzimin e kësaj kërkese me arsyetimin se i mituri nuk është pronar/anëtar.                                                                                                                                                                                                  - Akt përfaqësimi, deklaratë e antarëve të familjes bujqësore për zgjedhjen e një përfaqësuesi të ri të familjes bujqësore.     ",
     "Apliko": "https://e-albania.al/ServiceDetails/9436"
   },
@@ -62,6 +63,7 @@
     "Afati": "8 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "10.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Kontratë dhurimi (e cila ka bashkëlidhur certifikatë, kartelë të përditësuar dhe hartë kadastrale);                                                                                                                                                           2.Akt i dhurimit nëse ky përmbahet në një akt tjetër;                                                                                                                                       3.Mandat i cili vërteton pagesën e tatimit/taksës së kalimit të të drejtës së pronësisë nëse gjen zbatim për rastin;                                                                                                                                                       \n4.Kontrata e sigurimit 10 vjeçar në favor të përfituesit të dhurimit në rastet e lidhjes së kontratës për kalimin e pronësisë së ndërtesës midis ndërtuesit /zhvilluesit/investitorit dhe përfituesit të dhurimit për rastet e certifikatave të përdorimit të miratuara nga organet kompetente pas hyrjes në fuqi të ligjit nr.107/2014 \"Për planifikimin dhe zhvillimin e territorit\", i ndryshuar;                                                                                                                                        5.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari);                                                                                                                                                                                                                 ",
     "Apliko": "https://e-albania.al/ServiceDetails/9448"
   },
@@ -84,6 +86,7 @@
     "Afati": "8 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+     "fastPrice" : "10.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Akt noterial për heqjen dorë nga pronësia, (e cila ka bashkëlidhur certifikatë, kartelë të përditësuar dhe hartë kadastrale);                                                                                                            \n2.Akti i pranimit nëse ky përmbahet në një akt tjetër ;                                                                                          \n3.  Mandat pagese i cili vërteton pagesën e tatimit/taksës së kalimit të të drejtës së pronësisë në rastet kur gjen zbatim;                                                                                                                            \n4.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).                                                      ",
     "Apliko": "https://e-albania.al/ServiceDetails/9470"
   },
@@ -183,6 +186,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+     "fastPrice" : "10.500 lekë",
     "Dokumentacioni i nevojshëm": "1. Akt noterial  garantim kredie dhe  vendosjen e hipotekës me vlerën përkatëse, (bashkëlidhur kartelë pasurie dhe hartë kadastrale të përditësuar);                                                                                                                                                  2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo banka).                                                                                                                                          ",
     "Apliko": "https://e-albania.al/ServiceDetails/9447"
   },
@@ -194,6 +198,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+     "fastPrice" : "27.000 lekë",
     "Dokumentacioni i nevojshëm": "1. Akt noterial garantim kredie dhe vendosje hipoteke me vlerën përkatëse, (bashkëlidhur kartelë pasurie dhe hartë kadastrale të përditësuar);                                                     \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo banka).                                                                                                                                        ",
     "Apliko": "https://e-albania.al/ServiceDetails/9445"
   },
@@ -205,6 +210,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+     "fastPrice" : "40.000 lekë",
     "Dokumentacioni i nevojshëm": "1. Akt noterial garantimi kredie dhe vendosje hipoteke  me vlerën përkatëse, (bashkëlidhur kartelë pasurie dhe hartë kadastrale të përditësuar) ;                                                                 \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo banka).                                                                                                                                              ",
     "Apliko": "https://e-albania.al/ServiceDetails/9446"
   },
@@ -216,6 +222,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+     "fastPrice" : "10.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                                                   \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ perfituesi i hipotekës gjyqësore).                                                                                                                                     \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13862"
   },
@@ -227,6 +234,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "25.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor përfundimtar i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                  \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ perfituesi i hipotekës gjyqësore).                                                                                                                                 \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13863"
   },
@@ -238,6 +246,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "35.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor përfundimtar i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                                                                    \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ perfituesi i hipotekës gjyqësore).                                                                                                                                       \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13865"
   },
@@ -249,6 +258,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "4.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Akt juridik për vendosjen e hipotekës, (bashkëlidhur certifikatë, kartelë dhe hartë kadastrale të përditësuar);                                                                                                                                                    2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo përfituesi i hipotekës).                                                                                                                                                     ",
     "Apliko": "https://e-albania.al/ServiceDetails/13866"
   },
@@ -260,6 +270,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Akt noterial për kalimin e hipotekës, i cili ka bashkëlidhur kartelë të përditësuar dhe hartë kadastrale / vendim gjyqësor i formës së prerë;                                                                                                                                                                                                          2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).                                                   ",
     "Apliko": "https://e-albania.al/ServiceDetails/13867"
   },
@@ -270,7 +281,7 @@
     "Kodi": "B14",
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
-    "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "JO ",
     "Dokumentacioni i nevojshëm": "1.Akt juridik që përbën titull për vendosjen e hipotekës ligjore ;                                                                                    \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo perfituesi i hipotekës ligjore).",
     "Apliko": "https://e-albania.al/ServiceDetails/13902"
   },
@@ -293,6 +304,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "4.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Akt noterial/ Vendim gjyqësor i formës së prerë/ akt administrative/ akti i përmbaruesit gjyqësorë, për fshirje hipoteke ;                                                                                                                                                                                      2.Akt përfaqësimi (prokurë, ose autorizim nëse nuk aplikon vet subjekti pronar apo përfituesi i hipotekës).                                                                                                                                                           \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13903"
   },
@@ -359,6 +371,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Kontrata e shitjes,dhurimit,shkëmbimit me rezervë/ kusht i pasurisë së paluajtshme,  e cila ka bashkëlidhur, certifikatë,  kartelë të përditësuar dhe  hartë kadastrale);\n2.Kontratë dhurimi me kusht;                                                                                                                                                                 3.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari). \n",
     "Apliko": "https://e-albania.al/ServiceDetails/9441"
   },
@@ -381,6 +394,7 @@
     "Afati": "6 ditë pune ",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Kërkesë me shkrim ku shprehet fakti për të pasqyruar në bashkëpronësi të të dy bashkëshortëve pasurinë e fituar gjatë martesës;                                                                                                                                        2.Certifikata e gjendjes familjare e momentit kur është fituar pronësia;                                                                                 3.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon bashkeshorti/tja.                                      \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13870"
   },
@@ -392,6 +406,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Akti i përmbaruesit / akt administrativ/ vendim gjyqësor për vendosje sekuestro;                                                                                                                        \n2 Akt përfaqësimi, në rastet kur nuk aplikon përmbaruesi apo organi që ka vendosur sekuestron).                                                                                                                                                                                                                                                                                                       ",
     "Apliko": "https://e-albania.al/ServiceDetails/13871"
   },
@@ -414,6 +429,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor për vendosjen e masës së sigurimit të padisë;                                    \n2. Akt përfaqësimi nëse nuk aplikon pronari apo personi që përfiton të drejta sipas vendimit të gjykatë.                                                                                                                              ",
     "Apliko": "https://e-albania.al/ServiceDetails/9453"
   },
@@ -425,6 +441,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Akt noterial për pezullim veprimesh mbi pasurinë, ku të jetë përcaktuar shkaku dhe afati i pezullimit të veprimeve;                                                                                                 \n2. Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).                           \n",
     "Apliko": "https://e-albania.al/ServiceDetails/9475"
   },
@@ -447,6 +464,7 @@
     "Afati": "7 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Kërkesë-padi;                                                                                                                                                 \n2.Vërtetim lëshuar nga gjykata, me anë të të cilit provohet se kjo kërkesëpadi është regjistruar në gjykatë;                                                                                                                                               3.Informacion mbi të dhënat e pasurisë/të në të cilat do të regjistrohet kjo nëse nuk janë të cituara në kërkesë-padi;                                                                                              \n 4.Akt përfaqësimi në rast se personi që paraqet kërkesën nuk është personi që legjitimohet  për regjistrimin e këtij akti.                                                                                                                                \n    ",
     "Apliko": "https://e-albania.al/ServiceDetails/9468"
   },
@@ -458,6 +476,7 @@
     "Afati": "7 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1. Akt administrativ i cili përcakton të drejtën e parablerjes, shoqëruar nga                                   \nplanvendosja e pasurisë;                                                                                                                                                \n2. Akt përfaqësimi (prokurë, në rastet kur nuk aplikon përfituesi i të drejtës së parablerjes).                                                                                                                                                   ",
     "Apliko": "https://e-albania.al/ServiceDetails/9452"
   },
@@ -491,6 +510,7 @@
     "Afati": "6 ditë pune ",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Prokurë, apo akti noterial i revokimit të prokurës për pasuritë e personave private ose;                                                                                                                                                                2.Autorizim i lëshuar nga titullari i institucionit për personat juridik publikë;  \n3.Akt përfaqësimi (në rastet kur aplikimi nuk kryhet nga pronari/bashkëpronari).                                                                                                                                                                ",
     "Apliko": "https://e-albania.al/ServiceDetails/9451"
   },
@@ -579,6 +599,7 @@
     "Afati": "Për pasuritë e digjitalizuara – Menjëherë\nPër pasuritë ende të padigjitalizuara – 5 ditë pune ",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "3.000 lekë",
     "Dokumentacioni i nevojshëm": "                                                                                                                                                                                                                                                                                                                                                                                          1.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
     "Apliko": "https://e-albania.al/ServiceDetails/9462"
   },
@@ -601,6 +622,7 @@
     "Afati": "Për pasuritë e digjitalizuara – Menjëherë\nPër pasuritë ende të padigjitalizuara – 4 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "3.000 lekë",
     "Dokumentacioni i nevojshëm": "                                                                                                                                                                                                                                                                                                                                                                                                               ",
     "Apliko": "https://e-albania.al/ServiceDetails/9461"
   },
@@ -623,6 +645,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "3.500 lekë",
     "Dokumentacioni i nevojshëm": "                                                                                                                                                                                                                                                                                                                                                                                                                             1.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).                                                                                                                                                                                                                                                                                                                                                                                                            ",
     "Apliko": "https://e-albania.al/ServiceDetails/9482"
   },
@@ -755,6 +778,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "fastPrice" : "2.000 lekë",
     "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor i Gjykatës së Lartë;                                                                                                   \n2.Akt përfaqësimi në rast se nuk aplikon pronari apo personi që legjitimohet për këtë kërkesë.                                                                                                                                                 ",
     "Apliko": "https://e-albania.al/ServiceDetails/13880"
   },
@@ -798,7 +822,7 @@
     "Kodi": null,
     "Afati": "180 ditë pune ",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
-    "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
+    "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "JO ",
     "Dokumentacioni i nevojshëm": "1.\tKartë identiteti;                       \n2.\tCertifikatë familjare e momentit të aplikimit;                \n3.\tDeklaratë noteriale se nuk ka kryer veprën penale të dhunimit të banesës;                   \n4.\tDëshmi penaliteti të kohës së aplikimit;                              \n5.\tMandat i pageses së tarifës së shërbimit;\n6.\tProkura noteriale në rastet kur aplikimi kryhet nga përfaqësues i autorizuar.",
     "Apliko": "https://e-albania.al/ServiceDetails/14468"
   },

@@ -266,7 +266,7 @@ img{
 
   transform: translateX(-50%);
 
-  width: 100px;
+  width: 110px;
 
   background: #fff;
   color: #000;
@@ -278,7 +278,7 @@ img{
   font-size: 11px;
   font-weight: 400;
 
-  line-height: 1.4;
+  line-height: 1.6;
 
   text-align: center;
 
@@ -317,6 +317,130 @@ img{
 
 /* shfaqja */
 .info-wrapper:hover .info-tooltip {
+
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
+
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.badge-tooltip {
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 130px;
+
+  background: #fff;
+  color: #000;
+
+  padding: 6px 8px;
+  border-radius: 8px;
+
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,.18);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .2s ease;
+
+  z-index: 99999;
+}
+
+.badge-tooltip::before {
+  content: "";
+
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.badge-wrapper:hover .badge-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Tooltip */
+.info-tooltip1 {
+
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: 20%;
+
+  transform: translateX(-50%);
+
+  width: 220px;
+
+  background: #fff;
+  color: #000;
+
+  padding: 4px 6px;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+  font-weight: 400;
+  white-space: pre-line;
+  line-height: 1.6;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,.18);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .2s ease;
+
+  z-index: 99999;
+
+  text-transform: capitalize;
+
+}
+
+
+/* shigjeta */
+.info-tooltip1::before {
+
+  content: "";
+
+  position: absolute;
+
+  bottom: 100%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-width: 6px;
+  border-style: solid;
+
+  border-color: transparent transparent #fff transparent;
+}
+
+
+/* shfaqja */
+.info-wrapper:hover .info-tooltip1 {
 
   opacity: 1;
   visibility: visible;

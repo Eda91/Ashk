@@ -137,9 +137,12 @@ export default function Sherbimet() {
                    
                   />
 
-                    <span className="info-tooltip">
-                       Shërbim me procedurë të përshpejtuar brenda 24 orëve.
-                      </span>
+                   <span className="info-tooltip1">
+  Shërbim me procedurë të përshpejtuar (brenda 24 orëve)
+
+  Ju informojmë se për shërbimet Fast aplikohet një tarifë shtesë.
+  Për t'u informuar mbi tarifën përkatëse, mjafton të vendosni kursorin e mausit mbi badge-in (etiketën) që identifikon shërbimin Fast.
+</span>
                       </span>
 
                 </th>
@@ -255,15 +258,20 @@ export default function Sherbimet() {
 
                       ?
 
+                       <div className="badge-wrapper">
                       <span className="badge yes">
-
-                         <FaCheckCircle />
-
-                        24h
-
+                        <FaCheckCircle />
+                        &nbsp;24h
                       </span>
 
+                      <span className="badge-tooltip">
+                       Tarifë Fast: {item.fastPrice || "Nuk ka tarifë"}
+                      </span>
+                    </div>
+                      
+
                       :
+
 
                       <span className="badge no">
 
@@ -384,7 +392,7 @@ export default function Sherbimet() {
     <div className="mobile-cards">
 
 
-      {sherbimet.map((item,index)=>(
+      {filteredSherbimet.map((item,index)=>(
 
 
         <div
@@ -488,9 +496,12 @@ export default function Sherbimet() {
                    
                   />
 
-                    <span className="info-tooltip">
-                       Shërbim me procedurë të përshpejtuar brenda 24 orëve.
-                      </span>
+<span className="info-tooltip1">
+  Shërbim me procedurë të përshpejtuar (brenda 24 orëve).    &nbps;
+
+ &nbps;  Ju informojmë se për shërbimet Fast aplikohet një tarifë shtesë.
+  Për t'u informuar mbi tarifën përkatëse, mjafton të vendosni kursorin e mausit mbi badge-in (etiketën) që identifikon shërbimin Fast.
+</span>
                       </span>
             </span>
 
