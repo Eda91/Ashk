@@ -629,7 +629,7 @@
   {
     "Nr.": 56,
     "Emri i Shërbimit": "Aplikim për lëshim vërtetimesh për të gjithë territorin (negativ/pozitiv) ",
-    "Tarifa": "500 lekë/drejtori",
+    "Tarifa": "3000 lekë/drejtori",
     "Kodi": "I6ALL",
     "Afati": "Për pasuritë e digjitalizuara – Menjëherë\nPër pasuritë ende të padigjitalizuara – 1 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
@@ -850,7 +850,7 @@
   },
   {
     "Nr.": 76,
-    "Emri i Shërbimit": "Aplikim për lëshim vertetimesh (negativ/pozitiv)",
+    "Emri i Shërbimit": "Aplikim për lëshim vertetimesh (negativ/pozitiv) për drejtori vendore" ,
     "Tarifa": "500 lekë/drejtori",
     "Kodi": "I6",
     "Afati": "Për pasuritë e digjitalizuara – Menjëherë\nPër pasuritë ende të padigjitalizuara – 1 ditë pune",
