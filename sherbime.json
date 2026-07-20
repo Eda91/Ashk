@@ -223,7 +223,7 @@
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
      "fastPrice" : "10.000 lekë",
-    "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                                                   \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ perfituesi i hipotekës gjyqësore).                                                                                                                                     \n",
+    "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                                                   \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ përfituesi i hipotekës gjyqësore).                                                                                                                                     \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13862"
   },
   {
@@ -235,7 +235,7 @@
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
     "fastPrice" : "25.000 lekë",
-    "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor përfundimtar i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                  \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ perfituesi i hipotekës gjyqësore).                                                                                                                                 \n",
+    "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor përfundimtar i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                  \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ përfituesi i hipotekës gjyqësore).                                                                                                                                 \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13863"
   },
   {
@@ -247,7 +247,7 @@
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "PO",
     "fastPrice" : "35.000 lekë",
-    "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor përfundimtar i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                                                                    \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/ perfituesi i hipotekës gjyqësore).                                                                                                                                       \n",
+    "Dokumentacioni i nevojshëm": "1.Vendim gjyqësor përfundimtar i formës së prerë që përmban detyrimin monetar përkatës dhe që përbën titull për vendosjen e hipotekës;                                                                                                                                                    \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari/   përfituesi i hipotekës gjyqësore).                                                                                                                                       \n",
     "Apliko": "https://e-albania.al/ServiceDetails/13865"
   },
   {
@@ -282,7 +282,7 @@
     "Afati": "5 ditë pune",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "JO ",
-    "Dokumentacioni i nevojshëm": "1.Akt juridik që përbën titull për vendosjen e hipotekës ligjore ;                                                                                    \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo perfituesi i hipotekës ligjore).",
+    "Dokumentacioni i nevojshëm": "1.Akt juridik që përbën titull për vendosjen e hipotekës ligjore ;                                                                                    \n2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo përfituesi i hipotekës ligjore).",
     "Apliko": "https://e-albania.al/ServiceDetails/13902"
   },
   {
@@ -360,7 +360,7 @@
     "Afati": "12 ditë pune ",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "PO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "JO",
-    "Dokumentacioni i nevojshëm": "1. Akti i  bashkëpronësisë dhe dosja me dokumentacionin e objektit të miratuar të percjellë nga njësia e vetëqeverisjes vendore përkatëse e cila përmban dokumentacioni që bën;                                                                                                                        \n-Përshkrimin fizik të ndërtesës së banimit, destinacionin e përdorimit të çdo njësie individuale, përfshirë objektet në bashkëpronësi të detyrueshme;                                                                                                          \n-Planimetritë dhe vizatime të mjaftueshme për identifikimin e vendndodhjes dhe të përcaktimit të sipërfaqes së çdo njësie, brenda strukuturës ndërtimore;                         \n-Kuotat e pjesëmarrjes në bashkëpronësi për çdo njësi;                                                                                                                      \n-Përshkrimin e pronës së përbashkët  dhe procedurat e ndryshimit të aktit të bashkëpronësisë;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \n-Rregulloren për procedurat e formimit dhe funksionimit të asamblesë së pronarëve të njësive.                                                                                                                                                           2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo investitori).                                     \n",
+    "Dokumentacioni i nevojshëm": "1. Akti i  bashkëpronësisë dhe dosja me dokumentacionin e objektit të miratuar të përcjellë nga njësia e vetëqeverisjes vendore përkatëse e cila përmban dokumentacioni që bën;                                                                                                                        \n-Përshkrimin fizik të ndërtesës së banimit, destinacionin e përdorimit të çdo njësie individuale, përfshirë objektet në bashkëpronësi të detyrueshme;                                                                                                          \n-Planimetritë dhe vizatime të mjaftueshme për identifikimin e vendndodhjes dhe të përcaktimit të sipërfaqes së çdo njësie, brenda strukuturës ndërtimore;                         \n-Kuotat e pjesëmarrjes në bashkëpronësi për çdo njësi;                                                                                                                      \n-Përshkrimin e pronës së përbashkët  dhe procedurat e ndryshimit të aktit të bashkëpronësisë;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \n-Rregulloren për procedurat e formimit dhe funksionimit të asamblesë së pronarëve të njësive.                                                                                                                                                           2.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari apo investitori).                                     \n",
     "Apliko": "https://e-albania.al/ServiceDetails/9457"
   },
   {
@@ -533,7 +533,7 @@
     "Afati": "15 ditë pune ",
     "Kamatëvonesë (10% e tarifës/ditë vonesë, por jo më shumë se 300 000 lekë)": "JO",
     "FAST (Shërbime me procedurë të përshpejtuar - 24H)": "JO",
-    "Dokumentacioni i nevojshëm": "1.Kërkesë per saktësim (bashkëlidhur certifikatë, kartelë e përditësuar dhe hartë kadastrale );                                                                                                                                                               2.Plan-rilevimi shoqëruar me kopje të licensës së ekspertit topograf që ka përpiluar planin;                                                                                                                                           3.Deklaratë noteriale e kufitarëve nëse preken nga saktësimi;                                               \n4.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).         ",
+    "Dokumentacioni i nevojshëm": "1.Kërkesë për saktësim (bashkëlidhur certifikatë, kartelë e përditësuar dhe hartë kadastrale );                                                                                                                                                               2.Plan-rilevimi shoqëruar me kopje të licensës së ekspertit topograf që ka përpiluar planin;                                                                                                                                           3.Deklaratë noteriale e kufitarëve nëse preken nga saktësimi;                                               \n4.Akt përfaqësimi (prokurë, në rastet kur nuk aplikon pronari/ bashkëpronari).         ",
     "Apliko": "https://e-albania.al/ServiceDetails/13875"
   },
   {
@@ -850,7 +850,7 @@
   },
   {
     "Nr.": 76,
-    "Emri i Shërbimit": "Aplikim per leshim vertetimesh (negativ/pozitiv)",
+    "Emri i Shërbimit": "Aplikim për lëshim vertetimesh (negativ/pozitiv)",
     "Tarifa": "500 lekë/drejtori",
     "Kodi": "I6",
     "Afati": "Për pasuritë e digjitalizuara – Menjëherë\nPër pasuritë ende të padigjitalizuara – 1 ditë pune",
