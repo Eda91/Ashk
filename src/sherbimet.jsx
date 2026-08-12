@@ -58,7 +58,8 @@ export default function Sherbimet() {
   const search = searchTerm.toLowerCase();
 
   return (
-    item["Emri i Shërbimit"]?.toLowerCase().includes(search) 
+    item["Emri i Shërbimit"]?.toLowerCase().includes(search) ,
+    item["Kodi"]?.toLowerCase().includes(search) 
    
   );
 });
